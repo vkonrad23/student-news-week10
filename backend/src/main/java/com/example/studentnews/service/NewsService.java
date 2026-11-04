@@ -46,6 +46,9 @@ public class NewsService {
         return toResponse(newsRepository.save(item));
     }
 
+
+
+    // Week 10: testing backend changes for CI and E2E.
     public NewsResponse publish(Long id) {
         NewsItem item = findOrThrow(id);
         item.setStatus(NewsStatus.PUBLISHED);
